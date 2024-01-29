@@ -24,14 +24,8 @@ with open(r"C:\ENSF338\lab_01\part2\large-file.json", 'r', encoding = "utf-8") a
     print("Average Time Taken:", avg_time_taken, "seconds")
 
 
-    data2 = [None] * len(data)
+data.reverse()
 
-    for j in range(len(data) - 1, -1, -1):
-        data2[j] = data[(len(data) - 1) - j]
-    json_object = json.dumps(data2, indent=1)
-
-
-with open(r"C:\ENSF338\lab_01\part2\output.2.3.json", 'w', encoding= "utf-8") as file2:
-    file2.write(json_object)
-
-
+f = open('output.2.3.json', 'w', encoding = "utf8")
+f.write(json.dumps(data))
+f.close()
