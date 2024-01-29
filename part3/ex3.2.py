@@ -19,21 +19,15 @@ with open(r"C:\Users\HP\Documents\ENSF338\Lab1\large-file.json", 'r', encoding =
         rez = []
         tm = timeit.timeit(stmt = "changeSize()", setup="from __main__ import changeSize", number=100)
         rez.append(tm/100)
-        # Then, compute the average execution times across all
-        # and add it to our list of average times
         avg = sum(rez) / len(rez)
         avgtimes.append(avg)
         print("Average time for the first %d records: %f" % (record, avg))
         
-    data2 = [None] * len(data)
+data.reverse()
 
-    for j in range(len(data) - 1, -1, -1):
-        data2[j] = data[(len(data) - 1) - j]
-    json_object = json.dumps(data2, indent=1)
-
-
-with open(r"C:\Users\HP\Documents\ENSF338\Lab1\output.2.3.json", 'w', encoding= "utf-8") as file2:
-    file2.write(json_object)
+f = open('output.2.3.json', 'w', encoding = "utf8")
+f.write(json.dumps(data))
+f.close()
 
 
 from IPython.display import Video
