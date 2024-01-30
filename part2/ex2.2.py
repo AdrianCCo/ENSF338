@@ -1,4 +1,4 @@
-with open("C:/ENSF338/lab_01/pg2701.txt", "r", encoding="utf-8") as file:
+with open("part2/pg2701.txt", "r", encoding="utf-8") as file:
     file.seek(915)
     vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"]
     lines = file.readlines()
@@ -21,7 +21,7 @@ with open("C:/ENSF338/lab_01/pg2701.txt", "r", encoding="utf-8") as file:
 print(vowel_count, word_count)
 avg_count = float(vowel_count / word_count)
 
-print(avg_count)
+print("Vowel Per Word Count: ", avg_count)
 
         
 
