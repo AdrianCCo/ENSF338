@@ -4,7 +4,7 @@ import timeit
 total = 0
 
 #read file
-with open(r"C:\ENSF338\lab_01\part2\large-file.json", 'r', encoding = "utf-8") as file:
+with open(r"part2\large-file.json", 'r', encoding = "utf-8") as file:
     data = json.load(file)
 
 
@@ -14,13 +14,10 @@ with open(r"C:\ENSF338\lab_01\part2\large-file.json", 'r', encoding = "utf-8") a
 
     changeSize()
         
-    time_taken = timeit.repeat(stmt = "changeSize()", setup = "from __main__ import changeSize", repeat = 10, number = 1)
+    time_taken = timeit.timeit(stmt = "changeSize()", setup = "from __main__ import changeSize", number = 10)
 
-    for i in time_taken:
-        total += i
+    avg_time_taken = time_taken / 10
     
-    avg_time_taken = total / len(time_taken)
-
     print("Average Time Taken:", avg_time_taken, "seconds")
 
 
