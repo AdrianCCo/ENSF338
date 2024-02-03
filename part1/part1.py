@@ -3,10 +3,11 @@
 #   and n - 2 where they are added together and returned. Once n reaches 1, the function will return a value until
 #   it reaches the initial caller of the function.
 
-#2. No, this is not a divide and conquer algorithm
+#2. No, this is not a divide and conquer algorithm 
 
 
-#3. The big O notation for the recursive fibonacci function is O(2n). This is because for each input of n, the 
+#3. The big O notation for the recursive fibonacci function is O(2n) -> O(n). This is because for each input of n, the 
 #   function will call the function recursively twice more until the input reaches 0 or 1
+
 
 
