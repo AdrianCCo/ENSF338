@@ -1,7 +1,6 @@
 import cProfile
 import timeit
 
-
 def sub_function(n):
     # Sub Function calculates the factorial of n
     if n == 0:
@@ -39,5 +38,5 @@ with cProfile.Profile() as profile:
 # -- Manually measure elapsed time for a code region of interest (coarse-grained information)
 
 # 4. Discuss a sample output. Where does execution time go?
-# - At the top of the output, we can see the total amount of time that it took for the program to run which is 10.000
-# - Most of the time (cumtime) spent running the code is in the function third_function which uses 9.930 seconds
+# - At the top of the output, we can see the total amount of time that it took for the program to run which is 10.000 (relative to my computer)
+# - Most of the time (cumtime) spent running the code is in the function third_function which uses 9.930 seconds (relative to my computer)
