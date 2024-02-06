@@ -1,5 +1,5 @@
 # 5.4) The linear search is a linear function, and then binary search is a logarithmic function. The parameters of the linear plot
-# are vector_sizes and linear_avgtimes. The parameters of the binary plot are x (vector_sizes), a, and b. 
+# are vector_sizes and linear_avgtimes. The parameters of the binary plot are x (vector_sizes), a, and b.
 
 import timeit
 import random
