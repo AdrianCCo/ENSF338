@@ -8,6 +8,8 @@
 #3. The big O notation for the recursive fibonacci function is O(2^n). This is because for each input of n, the 
 #   function will call the function recursively twice more until the input reaches 0 or 1
 
+#5. The big O notation for the fibonacci function using memorization is O(n). 
+
 
 def funci(n, my_dict = dict()):
 
