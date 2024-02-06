@@ -67,6 +67,7 @@ plt.xlabel("Value of n")
 plt.ylabel("Execution Time")
 plt.plot(x_vals2, y_vals2)
 plt.savefig("ex1.6.2.jpg")
+plt.show()
 
 y_vals1 = time_dict_func.values()
 x_vals1 = time_dict_func.keys()
