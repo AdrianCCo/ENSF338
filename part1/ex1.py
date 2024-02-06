@@ -53,10 +53,6 @@ for i in range(36):
     elapsed_time = timeit.timeit(stmt = f"func({i})", setup = "from __main__ import func", number = 1)
     time_dict_func[i] = elapsed_time  
 
-print(time_dict_func)
-
-print(time_dict_funci)
-
 plt.style.use("fivethirtyeight")
 
 plt.style.use
