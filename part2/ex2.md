@@ -1,4 +1,4 @@
-1. Interpolation search is more efficient on uniformly distributed data. Interpolation search
+1.  Interpolation search is more efficient on uniformly distributed data. Interpolation search
     also takes into account the values of each element to adapt to any sorted values instead of always
     using the midway point to decide where to search next.
 
